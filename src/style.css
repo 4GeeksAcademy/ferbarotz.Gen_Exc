@@ -1,5 +1,14 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(21, 55, 245);
+    
 }
+
+#excuse {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(0, 0, 0);
+    padding-top: 250px;
+    font-size: 30px
+}
+
