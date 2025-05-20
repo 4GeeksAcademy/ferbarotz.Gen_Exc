@@ -13,14 +13,14 @@ window.onload = function () {
   let what = ['la moto', 'el carro', 'el despertador', 'el televisor'];
   let when = ['ayer', 'hoy', 'en la mañana', 'en la noche'];
 
-  function orderLet(option) {
+  function getElementAleatory(option) {
     return option[Math.floor(Math.random() * option.length)];
   }
 
-  function generadorDeExcusas() {
-    return orderLet(who) + " " + orderLet(action) + " " + orderLet(what) + " " + orderLet(when);
+  function excuseGenerator() {
+    return getElementAleatory(who) + " " + getElementAleatory(action) + " " + getElementAleatory(what) + " " + getElementAleatory(when);
   }
 
-  console.log(generadorDeExcusas(who, action, what, when));
-  document.querySelector("#excuse").innerHTML = generadorDeExcusas(who, action, what, when);
+  console.log(excuseGenerator(who, action, what, when));
+  document.querySelector("#excuse").innerHTML = excuseGenerator(who, action, what, when);
 }
